@@ -1,0 +1,533 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>DoorDash</title>
+    <link type="image/png" sizes="32x32" rel="icon" href="https://cdn.doordash.com/static/img/favicon@2x.ico?dd-nonce">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="nav-controls">
+            <div>
+                <button class="login-btn primary">Sign In</button>
+                <button class="signup-btn secondary">Login</button>
+            </div>
+            <div>
+                <button class="signup-btn primary">Sign Up</button>
+                <button class="login-btn secondary">Open App</button>
+            </div>
+        </div>
+        <div class="logo-container primary">
+            <div>
+                <div>
+                    <img src="images/doordash_icon.svg" alt="">
+                </div>
+                <div class="logo-text">
+                    <img src="images/doordash.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-section">
+            <div class="logo-container secondary">
+                <div>
+                    <div>
+                        <img src="images/doordash_icon.svg" alt="">
+                    </div>
+                    <div class="logo-text">
+                        <img src="images/doordash.svg" alt="DOORDASH">
+                    </div>
+                </div>
+            </div>
+            <h1>Discover restaurants and more near you.</h1>
+            <div class="address-section">
+                <div class="address-input">
+                    <img class="map-icon" src="icons/map.svg" alt="">
+                    <img src="icons/search.svg" alt="" class="search-icon">
+                    <input type="text" placeholder="Enter delivery address">
+                </div>
+                <button id="search-button"><img src="images/arrow.svg" alt=""></button>
+            </div>
+
+            <div class="info-section">
+                <span class="saved-address">
+                    <img class="profile-icon" src="images/profile.svg" alt="">
+                    <p>Sign in for saved address</p>
+                </span>
+
+                <span class="sign-in-info">
+                    <img src="icons/person.svg" alt="">
+                    <p> Sign In</p>
+                </span>
+
+                <span class="login-info">
+                    <img src="icons/person.svg" alt="">
+                    <p>Login</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================  hidden box======================= -->
+
+    <div class="hidden-section">
+        <div class="hidden-content">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <path d="M20.9506 9.06644C20.0784 7.42113 18.3736 6.41016 16.5301 6.41016H2.47575C2.21805 6.41016 2 6.62821 2 6.90573C2 7.02467 2.05947 7.14361 2.13876 7.24272L5.19147 10.3153C5.46899 10.5928 5.8258 10.7514 6.20243 10.7316H16.094C16.8076 10.7316 17.3825 11.2866 17.3825 12.0002C17.3825 12.7139 16.8274 13.2887 16.1138 13.2887H9.31461C9.05691 13.2887 8.83886 13.5068 8.83886 13.7843C8.83886 13.9033 8.89833 14.0222 8.97762 14.1213L12.0303 17.1939C12.3078 17.4714 12.6647 17.6102 13.0611 17.6102H16.1535C20.1577 17.6102 23.1905 13.3284 20.9506 9.06644Z" fill="#EB1700"></path>
+                </svg>
+            </div>
+            <div class="app-info">
+                <img src="https://img.cdn4dd.com/s/managed/app-store-logo/google-play-store-logo.svg" alt="">
+                <h2>DoorDash App</h2>
+                <p>Food & Groceries, Delivered</p>
+                <button><span>Get the App <img src="images/white.png" alt="0"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-cards">
+        <div class="cards-container">
+            <div class="info-card">
+                <div class="card-image">
+                    <img src="https://cdn.doordash.com/media/consumer/home/landing/new/ScootScoot.svg" alt="">
+                </div>
+                <div class="card-details">
+                    <h1>Become a Dasher</h1>
+                    <p>As a delivery driver, make money and work on your schedule. Sign up in minutes.</p>
+                    <button>
+                        <a href="">
+                            Start earning &nbsp;<img src="images/red.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="card-image">
+                    <img src="https://cdn.doordash.com/media/consumer/home/landing/new/Storefront.svg" alt="">
+                </div>
+                <div class="card-details">
+                    <h1>Become a Partner</h1>
+                    <p>Grow your business and reach new customers by partnering with us.</p>
+                    <button>
+                        <a href="" id="partner-link">
+                            Sign up your store&nbsp;&nbsp;<img src="images/red.png" alt="">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="card-image">
+                    <img src="https://cdn.doordash.com/media/consumer/home/landing/new/iphone.svg" alt="">
+                </div>
+                <div class="card-details">
+                    <h1>Get the best DoorDash experience</h1>
+                    <p>Experience the best your neighborhood has to offer, all in one app.</p>
+                    <button><a href>
+                        Get the app &nbsp;<img src="images/red.png" alt="">
+                    </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------image part--------------->
+    <div class="promotional-section one">
+        <div class="promotional-content">
+            <div class="promotional-item">
+                <div class="text-content">
+                    <h1>Everything you crave, delivered.</h1>
+                    <h4>Your favorite local restaurants</h4>
+                    <p>Get a slice of pizza or the whole pie delivered, or pick up house lo mein
+                        from the Chinese takeout spot you've been meaning to try.</p>
+                    <button>Find restaurants</button>
+                </div>
+                <div class="image-content">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/download_the_app_desktop.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promotional-section two">
+        <div class="promotional-content">
+            <div class="promotional-item">
+                <div class="image-content">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/dashpass_desktop.png"
+                        alt="">
+                </div>
+                <div class="text-content">
+                    <h1>DashPass is delivery for less</h1>
+                    <p>Members get a $0 delivery fee on DashPass orders, 5% back on pickup orders,
+                        and so much more. Plus, it's free for 30 days.</p>
+                    <button>Get DashPass</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="promotional-section three">
+        <div class="promotional-content">
+            <div class="promotional-item">
+                <div class="text-content">
+                    <h1>Real-time tracking and more</h1>
+                    <p>Track your order in real-time and get live updates on your delivery status.
+                        Plus, enjoy features like contactless delivery and easy reordering.</p>
+                    <button>Track your order</button>
+                </div>
+                <div class="image-content">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/track_your_order_desktop.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="promotional-section three">
+        <div class="promotional-content three">
+            <div class="promotional-item">
+                <div class="text-content">
+                    <h1>Get grocery and convenience store essentials</h1>
+                    <h4>Grocery delivery, exactly how you want it.</h4>
+                    <p>Shop from home and fill your cart with fresh produce, frozen entrees,
+                        deli delights, and more.</p>
+                    <button>Shop Groceries</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promotional-section one store">
+        <div class="promotional-content">
+            <div class="promotional-item">
+                <div class="text-content">
+                    <h1>Convenience stores at your doorstep</h1>
+                    <p> Stock up on snacks, household essentials, candy, or vitamins
+                        — all delivered in under an hour.</p>
+                    <button>Shop Now</button>
+                </div>
+                <div class="image-content">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/convenience_desktop.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imagegrid">
+        <div class="head">
+            <h1>Helping you with to-dos and gifting</h1>
+        </div>
+        <div class="image">
+            <div class="subimg">
+                <div class="gridsec">
+                    <div class="gridimg">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/package_pickup_desktop.png"
+                            alt="">
+                    </div>
+                    <div class="griddata">
+                        <h1>Return packages from home</h1>
+                        <p>Request a package pickup with just a few taps and get your
+                            returns dropped off at carriers like UPS, FedEx, and USPS.</p>
+                        <button>Try Package Pickup</button>
+                    </div>
+                </div>
+            </div>
+            <div class="subimg">
+                <div class="gridsec">
+                    <div class="gridimg">
+                        <img
+                            src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/flowers_desktop.png">
+                    </div>
+                    <div class="griddata two">
+                        <h1> Flowers for any occasion</h1>
+                        <p>Shop hand-picked and thoughtfully-arranged blooms from florists near you.</p>
+                        <button>Send Flowers</button>
+                    </div>
+                </div>
+            </div>
+            <div class="subimg">
+                <div class="gridsec">
+                    <div class="gridimg">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/alcohol_desktop.png"
+                            alt="">
+                    </div>
+                    <div class="griddata">
+                        <h1>Restock the minibar</h1>
+
+                        <p> Hosting a get-together or need or need a special cocktail
+                            ingredient? Get liquor, beer, mixers, champagne, and wine delivered fast.*</p>
+                        <button>Shop Alcohol</button><br><br>
+                        <span>*Must be 21+. Enjoy responsibly</span>
+                    </div>
+                </div>
+            </div>
+            <div class="subimg">
+                <div class="gridsec">
+                    <div class="gridimg">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/pet_supplies_desktop.png"
+                            alt="">
+                    </div>
+                    <div class="griddata two">
+                        <h1>What your pets need, and want</h1>
+                        <p> Finally, something cat people and dog people agree on — pet supplies delivery.
+                            Shop pet food, chew toys, and even costumes.</p>
+                        <button>Get Pet Supplies</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="centersec">
+        <div class="head">
+            <h1>Unlocking opportunity for Dashers and businesses</h1>
+        </div>
+        <div class="promotional-section one">
+            <div class="promotional-content">
+                <div class="promotional-item">
+                    <div class="text-content">
+                        <h1>Sign up to dash and get paid</h1>
+                        <p>Deliver with the #1 Food and Drink App in the U.S.
+                            As a delivery driver, you'll make money and work
+                            on your schedule. Sign up in minutes.</p>
+
+                        <button>Become a Dasher</button>
+                    </div>
+                    <div class="image-content">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/become_a_dasher_desktop.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promotional-section two">
+            <div class="promotional-content dash">
+                <div class="promotional-item">
+                    <div class="image-content">
+                        <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/work_with_doordash_desktop.png"
+                            alt="">
+                    </div>
+                    <div class="text-content ">
+                        <h1>Grow your business with DoorDash</h1>
+
+                        <p> Businesses large and small partner with DoorDash to reach new customers, increase order
+                            volume, and drive more sales.</p>
+                        <button>Become a Partner</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="citysec">
+        <div class="cities">
+            <div class="head">
+                <h1> Get more from your neighborhood</h1>
+            </div>
+            <div class="maincities">
+                <div id="first">
+                    <p>Top Cities</p>
+                </div>
+                <div>
+                    <p>Top Cuisines</p>
+                </div>
+                <div>
+                    <p>Top Chains</p>
+                </div>
+            </div>
+            <div class="citydata">
+                <ul>
+                    <li>New York</li>
+                    <li>Los Angeles</li>
+                    <li>Toronto</li>
+                    <li>Chicago</li>
+                    <li>Houston</li>
+                    <li>Brooklyn</li>
+                    <li>San Diego</li>
+                    <li>Las Vegas</li>
+                    <li>San Francisco</li>
+                    <li>Seattle</li>
+                    <li>Atlanta</li>
+                    <li>Queens</li>
+                    <li>Vancouver</li>
+                    <li>Miami</li>
+                    <li>San Antonio</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------footer-------------------->
+
+    <!-- <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img class="footer-logo" src="icons/doordash.svg" alt="DoorDash">
+                <div class="footer-links">
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>Get to Know Us</h2>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Pickup</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Connect With Us</h2>
+                <div class="social-media-links">
+                    <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <footer>
+        <div class="footerone">
+            <h5>Popular Categories</h5>
+            <div>
+
+                <ul id="one">
+
+                    <li>Alcohol Delivery</li>
+                    <li> Grocery Delivery Canada</li>
+                    <li> Per Store Near Me</li>
+                    <li>Back To School Delivery</li>
+                    <li>Dashmart Near Me</li>
+                    <li>Convenience Stores Canada</li>
+
+                </ul>
+                <ul id="two">
+
+                    <li> Halloween</li>
+                    <li> Retail Stores Near Me</li>
+                    <li> Beauty Stores</li>
+                    <li> Deck The Doorstep</li>
+                    <li> Large Group Orders</li>
+                    <li> Seasonal Holidays</li>
+
+                </ul>
+                <ul id="three">
+
+                    <li> Beauty Supply</li>
+                    <li> Drugstores Canada</li>
+                    <li> Medicine Delivery</li>
+                    <li> Snap Ebt</li>
+                    <li> Catering Near Me</li>
+                    <li> Flower Delivery</li>
+
+                </ul>
+                <ul id="four">
+
+
+                    <li> Mothers Day</li>
+                    <li> Snap Ebt</li>
+                    <li> Valentines Day</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footertwo">
+            <div class="footone">
+                <div>
+                    <ul>
+                        <h5>Get to Know Us</h5>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Investors</li>
+                        <li>Company Blog</li>
+                        <li>Engineering Blog</li>
+                        <li>Merchant Blog</li>
+                        <li>Gift Cards</li>
+                        <li>Package Pickup</li>
+                        <li>Promotions</li>
+                        <li>Dasher Central</li>
+                        <li>LinkedIn</li>
+                        <li>Glassdoor</li>
+                        <li>Accessibility</li>
+                        <li>Newsroom</li>
+                    </ul>
+                </div>
+                <div>
+
+                    <ul>
+                        <h5>Let Us Help You</h5>
+                        <li>Account Details</li>
+                        <li>Order History</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+                <div id="business">
+
+                    <ul>
+                        <h5>Doing Business</h5>
+                        <li>Become a Dasher</li>
+                        <li>List Your Business</li>
+                        <li>Get Dashers for Deliveries</li>
+                        <li>Get DoorDash for Business</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerimages">
+                <div class="app">
+                    <img src="images/appstore.svg" alt="">
+                </div>
+                <div class="gpay">
+                    <img src="images/playstore.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footerthree">
+            <div class="footerterm">
+                <ul>
+                    <li><img src="images/icon1.svg" alt=""></li>
+                    <li>Terms of Service</li>
+                    <li>Privacy</li>
+                    <li>Delivery Locations</li>
+                    <li>Do Not Sell or Share My Personal Information</li>
+                    <li>© 2024 DoorDash</li>
+                </ul>
+            </div>
+
+            <div class="button">
+                <button>
+                    <img src="icons/web.svg" alt="">
+                    <p>English(US)</p>
+                    <img src="icons/dropdown.svg" alt="" style="display: relative;">
+                </button>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><img src="images/facebook.svg" alt=""></li>
+                    <li><img src="images/twitter.svg" alt=""></li>
+                    <li><img src="images/instagram.svg" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
